@@ -6,16 +6,15 @@ import com.pragma.pages.demoblaze.ItemPage;
 
 import io.cucumber.java.en.When;
 
-public class AddLaptopsToCartStepDefinitions {
+public class AddMonitorsToCartStepDefinitions {
 
 	HomePage homePage;
 	CartPage cartPage;
 	ItemPage itemPage;
 	
-	@When("Agrego una laptop al carrito de compra")
-	public void agregoUnaLaptopAlCarritoDeCompra() {
-		homePage.sendLaptopToCart(cartPage, itemPage);
+	@When("Agrego un monitor al carrito de compra")
+	public void agregoUnMonitorAlCarritoDeCompra() {
+		homePage.sendMonitorToCart(cartPage, itemPage);
 	}
 	
-
 }

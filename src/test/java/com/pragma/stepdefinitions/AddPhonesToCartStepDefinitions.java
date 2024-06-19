@@ -22,18 +22,17 @@ public class AddPhonesToCartStepDefinitions {
 		homePage.navigateTo();
 	}
 
-	@When("Dado que quiero agregar un celular al carrito de compra")
-	public void dado_que_quiero_agregar_un_celular_al_carrito_de_compra() {
+	@When("Agrego un celular al carrito de compra")
+	public void agregoUnCelularAlCarritoDeCompra() {
 		homePage.sendPhoneToCart(cartPage, itemPage);
 	}
 
-	@Then("Validar que el item existe en el carrito de compra")
-	public void validar_que_el_item_existe_en_el_carrito_de_compra() {
+	@Then("Valido que el item existe en el carrito de compra")
+	public void validoQueElItemExisteEnElCarritoDeCompra() {
 		homePage.goToCart();
 		cartPage.isDisplayedTable();
 		for (Item item : cartPage.getListItems()) {
-			assertTrue("Se esperaba el la existencia del item: " + item,
-					cartPage.existItem(item));
+			assertTrue("Se esperaba el la existencia del item: " + item, cartPage.existItem(item));
 		}
 	}
 

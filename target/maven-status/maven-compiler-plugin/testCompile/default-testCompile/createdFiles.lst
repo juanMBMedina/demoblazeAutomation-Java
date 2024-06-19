@@ -1,2 +1,6 @@
+com\pragma\runner\AddMonitorsToCart.class
 com\pragma\stepdefinitions\AddPhonesToCartStepDefinitions.class
+com\pragma\runner\AddLaptopsToCart.class
+com\pragma\stepdefinitions\AddMonitorsToCartStepDefinitions.class
 com\pragma\runner\AddPhonesToCart.class
+com\pragma\stepdefinitions\AddLaptopsToCartStepDefinitions.class

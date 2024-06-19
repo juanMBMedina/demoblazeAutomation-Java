@@ -19,8 +19,9 @@ public class CartPage extends PageObject {
 	private final Logger LOGGER = Logger.getLogger(CartPage.class.getName());
 	private final By buttonPlaceOrder = By.className("btn-success");
 	private final By itemsAdded = By.xpath("//tr[@class='success']");
-	private final String valueItemCart = "//tr[@class='success']//td[text()='%s']";
-
+	private final String valueItemCart = "//tr[@class='success' and td[text()='%s']]";
+	private final String labelDeleteItemCart = "//tr[@class='success' and td[text()='%s']]//td//a[text()='Delete']";
+	
 	private List<Item> listItems = new ArrayList<Item>();
 
 	public void add(Item item) {
@@ -37,9 +38,19 @@ public class CartPage extends PageObject {
 
 	public Boolean existItem(Item item) {
 		try {
-			By locator = By.xpath(String.format(valueItemCart, item.getName()));
-			Actions.waitForElement(getDriver(), locator, 5);
-			WebElement itemName = Actions.findElement(getDriver(), locator);
+			WebElement itemName = getElement(String.format(valueItemCart, item.getName()));
+			return itemName.isDisplayed();
+		} catch (Exception e) {
+			LOGGER.log(Level.SEVERE, "El Item " + item + " No existe en la tabla");
+			return Boolean.FALSE;
+		}
+	}
+	
+	public Boolean deleteItem(Item item) {
+		try {
+			WebElement itemName = getElement(String.format(labelDeleteItemCart, item.getName()));
+			Actions.clickInObject(getDriver(), itemName);
+			listItems.remove(item);
 			return itemName.isDisplayed();
 		} catch (Exception e) {
 			LOGGER.log(Level.SEVERE, "El Item " + item + " No existe en la tabla");
@@ -50,5 +61,10 @@ public class CartPage extends PageObject {
 	public List<Item> getListItems() {
 		return listItems;
 	}
-
+	
+	private WebElement getElement(String strLocator) {
+		By locator = By.xpath(strLocator);
+		Actions.waitForElement(getDriver(), locator, 5);
+		return Actions.findElement(getDriver(), locator);
+	}
 }
