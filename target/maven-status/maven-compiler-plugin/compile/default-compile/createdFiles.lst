@@ -1,0 +1,6 @@
+com\pragma\pages\demoblaze\ItemPage.class
+com\pragma\models\Item.class
+com\pragma\constants\Constants.class
+com\pragma\pages\demoblaze\HomePage.class
+com\pragma\actions\Actions.class
+com\pragma\pages\demoblaze\CartPage.class
