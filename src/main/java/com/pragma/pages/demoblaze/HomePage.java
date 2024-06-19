@@ -53,7 +53,7 @@ public class HomePage extends PageObject {
 		Actions.clickInObject(getDriver(), homeLink);
 	}
 	
-	public void selectItem() {
+	public void selectRandomItem() {
 		try {
 			// I don-t want to use Thread.sleep
 			Thread.sleep(1000);
@@ -69,7 +69,7 @@ public class HomePage extends PageObject {
 	public void sendPhoneToCart(CartPage cartPage, ItemPage itemPage) {
 		goToHome();
 		selectPhonesLabel();
-		selectItem();
+		selectRandomItem();
 		itemPage.addItemToCart(cartPage);
 		goToHome();
 	}
@@ -77,7 +77,7 @@ public class HomePage extends PageObject {
 	public void sendLaptopToCart(CartPage cartPage, ItemPage itemPage) {
 		goToHome();
 		selectLaptopsLabel();
-		selectItem();
+		selectRandomItem();
 		itemPage.addItemToCart(cartPage);
 		goToHome();
 	}
@@ -85,7 +85,7 @@ public class HomePage extends PageObject {
 	public void sendMonitorToCart(CartPage cartPage, ItemPage itemPage) {
 		goToHome();
 		selectMonitorsLabel();
-		selectItem();
+		selectRandomItem();
 		itemPage.addItemToCart(cartPage);
 		goToHome();
 	}

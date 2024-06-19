@@ -1,3 +1,4 @@
+D:\ProgramingProjects\EclipseProjects\TestPragma\src\test\java\com\pragma\stepdefinitions\RemoveAllItemsInCartStepDefinitions.java
 D:\ProgramingProjects\EclipseProjects\TestPragma\src\test\java\com\pragma\stepdefinitions\RemoveItemInCartStepDefinitions.java
 D:\ProgramingProjects\EclipseProjects\TestPragma\src\test\java\com\pragma\stepdefinitions\AddPhonesToCartStepDefinitions.java
 D:\ProgramingProjects\EclipseProjects\TestPragma\src\test\java\com\pragma\runner\AddMonitorsToCart.java
@@ -5,4 +6,5 @@ D:\ProgramingProjects\EclipseProjects\TestPragma\src\test\java\com\pragma\stepde
 D:\ProgramingProjects\EclipseProjects\TestPragma\src\test\java\com\pragma\runner\AddPhonesToCart.java
 D:\ProgramingProjects\EclipseProjects\TestPragma\src\test\java\com\pragma\stepdefinitions\AddLaptopsToCartStepDefinitions.java
 D:\ProgramingProjects\EclipseProjects\TestPragma\src\test\java\com\pragma\runner\AddLaptopsToCart.java
+D:\ProgramingProjects\EclipseProjects\TestPragma\src\test\java\com\pragma\runner\RemoveAllItemsInCart.java
 D:\ProgramingProjects\EclipseProjects\TestPragma\src\test\java\com\pragma\runner\RemoveItemInCart.java

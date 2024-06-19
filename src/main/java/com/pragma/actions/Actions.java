@@ -68,15 +68,7 @@ public class Actions {
 	}
 
 	
-	public static int getCantElements(WebDriver myBrowser, String txtXpathListLang) {
-		List<WebElement> listLang = myBrowser.findElements(By.xpath(txtXpathListLang));
-		return listLang.size();
-	}
 	
-	public static int getCantElements(WebDriver myBrowser, By locator) {
-		List<WebElement> listLang = myBrowser.findElements(locator);
-		return listLang.size();
-	}
 	
 	public static void confirmAlert(WebDriver myBrowser) {
 		WebDriverWait wait = new WebDriverWait(myBrowser, 10);
@@ -93,19 +85,9 @@ public class Actions {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         wait.until(webDriver -> js.executeScript("return document.readyState").equals("complete"));
     }
-	
-	public static String getDataInRegex(String strTextIn, String regExp) {
-		// Return data in RegExp if have one group () !
-		Pattern pattern = Pattern.compile(regExp);
-		Matcher matcher = pattern.matcher(strTextIn);
-		if (matcher.find() && matcher.groupCount() == 1 ) {
-			return matcher.group(0);
-		}
-		return NULL_VALUE;
-	}
-	
+		
 	public static Integer sumList(ArrayList<Integer> listNums) {
-		int sum = 0;
+	 Integer sum = 0;
 		for (Integer elem : listNums ) sum += elem;
 		return sum;
 	}

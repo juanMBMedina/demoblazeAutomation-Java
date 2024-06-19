@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 
 import com.pragma.actions.Actions;
 import com.pragma.models.Item;
+import com.pragma.utils.Utils;
 import com.pragma.constants.*;
 
 import net.serenitybdd.core.pages.PageObject;
@@ -26,7 +27,7 @@ public class ItemPage extends PageObject {
 
 	private void setPrice() {
 		String allText = Actions.getTextFrom(getDriver(), priceLabel);
-		this.price = Integer.valueOf(Actions.getDataInRegex(allText, Constants.STR_REGEXP_NUMBER));
+		this.price = Integer.valueOf(Utils.getDataInRegex(allText, Constants.STR_REGEXP_NUMBER));
 	}
 
 	private void setDescription() {
