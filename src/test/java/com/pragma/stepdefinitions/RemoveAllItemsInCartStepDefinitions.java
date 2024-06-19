@@ -15,14 +15,14 @@ public class RemoveAllItemsInCartStepDefinitions {
 	HomePage homePage;
 	CartPage cartPage;
 	ItemPage itemPage;
-	
+
 	@When("Agrego varios aleatorios items al carrito de compra")
 	public void agregoVariosAleatoriosItemsAlCarritoDeCompra() {
 		homePage.sendPhoneToCart(cartPage, itemPage);
 		homePage.sendLaptopToCart(cartPage, itemPage);
 		homePage.sendMonitorToCart(cartPage, itemPage);
 	}
-		
+
 	@Then("Valido que el carrito de compra no tiene items")
 	public void validoQueElCarritoDeCompraNoTieneItems() {
 		homePage.goToCart();

@@ -1,4 +1,5 @@
 com\pragma\constants\Constants.class
+com\pragma\models\Customer.class
 com\pragma\actions\Actions.class
 com\pragma\pages\demoblaze\ItemPage.class
 com\pragma\models\Item.class

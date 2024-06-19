@@ -21,10 +21,10 @@ public class Actions {
 	}
 
 	public static void writeEditText(WebDriver myBrowser, By editText, String strEditText) {
-		myBrowser.findElement(editText).click();
+		clickInObject(myBrowser, editText);
 		myBrowser.findElement(editText).sendKeys(strEditText);
 	}
-
+	
 	public static void clickInObject(WebDriver myBrowser, By objectToClick) {
 		WebDriverWait waitElem = new WebDriverWait(myBrowser,5);
 		waitElem.until(ExpectedConditions.elementToBeClickable(objectToClick));

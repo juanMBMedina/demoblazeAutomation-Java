@@ -1,4 +1,4 @@
-package com.pragma.runner;
+package com.pragma.runners;
 
 import org.junit.runner.RunWith;
 import io.cucumber.junit.CucumberOptions;
@@ -8,12 +8,12 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
 		glue = "com.pragma.stepdefinitions",
-		features = "src/test/resources/features/remove_all_items_in_cart.feature",
+		features = "src/test/resources/features/add_phones_to_cart.feature",
 		snippets = SnippetType.CAMELCASE,
 		strict = true
 		)
 
-public class RemoveAllItemsInCart {
+public class AddPhonesToCart {
 
 }
 
