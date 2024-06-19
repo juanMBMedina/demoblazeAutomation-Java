@@ -1,10 +1,8 @@
 #Author: Juan Miguel Blanco Medina
-Feature: Agregar items tipo Laptop al Carrito de compras para el sitio demoblaze
-  Quiero agregar una Laptop al carrito de pruebas
+Feature: Eliminar items del Carrito de compras para el sitio demoblaze
+  Quiero eliminar un item al carrito de pruebas
 
-  Scenario: Agregando Laptop al carrito
+  Scenario: Eliminado un item en el carrito de compras
     Given Quiero ingresar al sitio demoblaze
-    When Agrego un celular al carrito de compra
-    When Agrego un monitor al carrito de compra
-    When Agrego una laptop al carrito de compra
-    Then Valido que el item existe en el carrito de compra
+    When Agrego varios items al carrito de compra
+    Then Valido que el item no existe en el carrito de compra

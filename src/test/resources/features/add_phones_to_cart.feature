@@ -1,5 +1,5 @@
 #Author: Juan Miguel Blanco Medina
-Feature: Agregar items tipo Celular al Carrito de compras para el sitio demoblaze
+Feature: Agregar items al Carrito de compras para el sitio demoblaze
   Quiero agregar un Celular al carrito de pruebas
 
   Scenario: Agregando Celular al carrito

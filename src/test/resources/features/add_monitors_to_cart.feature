@@ -1,5 +1,5 @@
 #Author: Juan Miguel Blanco Medina
-Feature: Agregar items tipo Monitor al Carrito de compras para el sitio demoblaze
+Feature: Agregar items al Carrito de compras para el sitio demoblaze
   Quiero agregar un Monitor al carrito de pruebas
 
   Scenario: Agregando Monitor al carrito

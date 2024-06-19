@@ -11,6 +11,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 import com.pragma.actions.Actions;
+import com.pragma.utils.Utils;
 
 import net.serenitybdd.core.pages.PageObject;
 
@@ -54,14 +55,12 @@ public class HomePage extends PageObject {
 	
 	public void selectItem() {
 		try {
-			// No queria usar el Thread.sleep
+			// I don-t want to use Thread.sleep
 			Thread.sleep(1000);
 			List <WebElement> listItems = Actions.findElements(getDriver(), itemsClass);
-			Random random = new Random();
-	        Integer randomIndex = random.nextInt(listItems.size());
+	        Integer randomIndex = Utils.getRandomNumber(listItems.size());
 	        Actions.clickInObject(getDriver(), listItems.get(randomIndex));
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		

@@ -1,5 +1,5 @@
 #Author: Juan Miguel Blanco Medina
-Feature: Agregar items tipo Laptop al Carrito de compras para el sitio demoblaze
+Feature: Agregar items al Carrito de compras para el sitio demoblaze
   Quiero agregar una Laptop al carrito de pruebas
 
   Scenario: Agregando Laptop al carrito
