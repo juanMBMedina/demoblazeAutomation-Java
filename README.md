@@ -13,8 +13,8 @@ _Check your drivers for the version, for this project i used the next versions i
   * Firefox: 127.0
     
 _You can run the envirorment using the commands, cdm must be opened in the root folder of the project_
-  * clean verify -Denvironment=chrome
-  * clean verify -Denvironment=firefox
+  * mvn clean verify -Denvironment=chrome
+  * mvn clean verify -Denvironment=firefox
     
 _You can see the report in the folder:_
 
