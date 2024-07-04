@@ -17,5 +17,4 @@ public class AddLaptopsToCartStepDefinitions {
 		homePage.sendLaptopToCart(cartPage, itemPage);
 	}
 	
-
 }

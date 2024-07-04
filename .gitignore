@@ -207,5 +207,6 @@ hs_err_pid*
 replay_pid*
 
 # No target.
-target/
+./target/
+/target
 # End of https://www.toptal.com/developers/gitignore/api/intellij,eclipse,java

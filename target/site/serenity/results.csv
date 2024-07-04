@@ -1,8 +1,0 @@
-"Story","Title","Result","Date","Stability","Duration (s)"
-"Agregar items al Carrito de compras para el sitio demoblaze","Agregando Laptop al carrito","SUCCESS","2024-06-19T17:06:36.2809285-05:00[America/Bogota]","0.0","17.62"
-"Agregar items al Carrito de compras para el sitio demoblaze","Agregando Monitor al carrito","SUCCESS","2024-06-19T17:06:59.292956-05:00[America/Bogota]","0.0","14.26"
-"Agregar items al Carrito de compras para el sitio demoblaze","Agregando Celular al carrito","SUCCESS","2024-06-19T17:07:14.2888583-05:00[America/Bogota]","0.0","11.54"
-"Realizar compra de items en el Carrito de compras para el sitio demoblaze","Title of your scenario outline","SUCCESS","2024-06-19T17:07:26.4507083-05:00[America/Bogota]","0.0","26.7"
-"Precio Total en el Carrito de compras para el sitio demoblaze","Validar el precio en el carrito de compras","SUCCESS","2024-06-19T17:07:53.4499391-05:00[America/Bogota]","0.0","28.37"
-"Eliminar items del Carrito de compras para el sitio demoblaze","Eliminado un item en el carrito de compras","SUCCESS","2024-06-19T17:08:23.1901351-05:00[America/Bogota]","0.0","45.87"
-"Eliminar items del Carrito de compras para el sitio demoblaze","Eliminado todos los items en el carrito de compras","SUCCESS","2024-06-19T17:09:10.0097994-05:00[America/Bogota]","0.0","32.8"
